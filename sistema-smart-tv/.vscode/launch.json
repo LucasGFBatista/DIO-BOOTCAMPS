@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "sistema-smart-tv_a4afaef5"
+        },
+        {
+            "type": "fpDebug",
+            "request": "launch",
+            "name": "",
+            "program": "${workspaceFolder}/executable"
+        }
+    ]
+}
