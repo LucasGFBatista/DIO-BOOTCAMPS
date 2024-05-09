@@ -2,10 +2,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Teste",
+            "request": "launch",
+            "mainClass": "Teste",
+            "projectName": "sistema-smart-tv_a4afaef5"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "sistema-smart-tv_a4afaef5"
+            "projectName": "sistema-smart-tv"
         },
         {
             "type": "fpDebug",
