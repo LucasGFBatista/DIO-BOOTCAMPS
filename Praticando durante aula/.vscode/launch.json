@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AboutMe",
+            "request": "launch",
+            "mainClass": "AboutMe",
+            "projectName": "Praticando durante aula_d9af33ff"
+        },
+        {
+            "type": "fpDebug",
+            "request": "launch",
+            "name": "",
+            "program": "${workspaceFolder}/executable"
+        }
+    ]
+}
