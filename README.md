@@ -4,8 +4,8 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 
 ## Desafios
 
-1. [Desafio Banco terminal](Atividades/banco-terminal/)
-2. [Desafio controle de Fluxo](Atividades/DesafioControleFluxo)
+1. [Desafio Banco terminal](Desafios/banco-terminal/) - 2024-05-13
+2. [Desafio controle de Fluxo](Desafios/DesafioControleFluxo) - 2024-05-17
 
 
 ## Praticando durante a aula
