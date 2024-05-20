@@ -6,6 +6,13 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 
 1. [Desafio Banco terminal](Desafios/banco-terminal/) - 2024-05-13
 2. [Desafio controle de Fluxo](Desafios/DesafioControleFluxo) - 2024-05-17
+3. [Condições, Loops e Exceções](Desafios/CondicoesLoopsExcecoes/)
+    - [Readme Desafios](Desafios/CondicoesLoopsExcecoes/README.md)
+    1. [Operações Bancárias Simples com Swithc - Simulcao Bancaria](Desafios/CondicoesLoopsExcecoes/src/simulacaoBancaria/) - 2024-05-20
+    1.  [Verificaão de Número de Conta Bancária - VerificadorNumeroConta]()
+    1. [Verificador de Idade para Conta Bancaria]()
+    1. [Verificação de Cheque Especial]()
+    1. [Controle de Saques]()
 
 
 ## Praticando durante a aula
