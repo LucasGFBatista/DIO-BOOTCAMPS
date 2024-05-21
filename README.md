@@ -9,7 +9,7 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 3. [Condições, Loops e Exceções](Desafios/CondicoesLoopsExcecoes/)
     - [Readme Desafios](Desafios/CondicoesLoopsExcecoes/README.md)
     1. [Operações Bancárias Simples com Swithc - SimulcaoBancaria](Desafios/CondicoesLoopsExcecoes/src/simulacaoBancaria/) - 2024-05-20
-    1.  [Verificaão de Número de Conta Bancária - VerificadorNumeroConta]()
+    1.  [Verificaão de Número de Conta Bancária - VerificadorNumeroConta](Desafios/CondicoesLoopsExcecoes/src/verificadorNumeroConta/) - 2024-05-21
     1. [Verificador de Idade para Conta Bancaria]()
     1. [Verificação de Cheque Especial]()
     1. [Controle de Saques]()

@@ -1,8 +1,16 @@
 # Condições, Loops e Exceções na Prática com Java
 
+# Sumario
+
+1. [Operações Bancárias Simples com Switch](#operações-bancárias-simples-com-switch)
+1. [Verificação de Número de Conta Bancária](#verificação-de-número-de-conta-bancária)
+1. 
+
+
+
 ## Operações Bancárias Simples com Switch
 
-[Link pacote](/src/simulacaoBancaria/)
+[Link pasta de respsta do desafio](/src/simulacaoBancaria/)
 
 ### Descrição
 
@@ -33,12 +41,12 @@ Se o usuário escolher:
 
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-![alt text](/imgs/img_simulcaoBancaria.png)
+![Tabela de In and out - SimulacaoBancaria](./imgs/img_simulcaoBancaria.png)
 
 ---
 ## Verificação de Número de Conta Bancária
 
-[Link pacote](/src/verificadorNumeroConta/)
+[Link pasta de resposta do desafio](/src/verificadorNumeroConta/)
 
 ### Descrição
 
@@ -51,9 +59,9 @@ O programa solicitará ao usuário que digite o número da conta bancária.
 ### Saída
 O programa utilizará um bloco try-catch para verificar se o número da conta possui exatamente 8 dígitos.
 Se o número da conta tiver 8 dígitos, o programa informará que é um número válido.
-Se o número da conta não tiver 8 dígitos, o programa lançará uma exceção (por exemplo, IllegalArgumentException) e informará que o número da conta é inválido.
+Se o número da conta não tiver 8 dígitos, o programa lançará uma exceção (por exemplo, _IllegalArgumentException_) e informará que o número da conta é inválido.
 
 ### Exemplos
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-![alt text](/imgs/img_VerificadorNumeroConta.png)
+![Tabela de In and out - VerificadorNumeroConta](./imgs/img_VerificadorNumeroConta.png)
