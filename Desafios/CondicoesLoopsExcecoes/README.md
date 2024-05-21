@@ -6,8 +6,8 @@
 1. [Operações Bancárias Simples com Switch](#operações-bancárias-simples-com-switch) - 2024-05-20
 1. [Verificação de Número de Conta Bancária](#verificação-de-número-de-conta-bancária) - 2024-05-21
 1. [Verificador de Idade para Conta Bancária](#verificador-de-idade-para-conta-bancária) - 2024-05-21
-1. [Verificação de Cheque Especial]() - 
-1. [Controle de Saques]() - 
+1. [Verificação de Cheque Especial](#verificacao-de-cheque-especial) - 2024-05-21
+1. [Controle de Saques](#controle-de-saques) - 
 
 
 
@@ -98,7 +98,7 @@ A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectiva
 
 ---
 
-## 
+## Verificacao de Cheque Especial
 
 ### Descrição
 
@@ -124,3 +124,29 @@ O limite do cheque especial será definido como 500 unidades monetárias.
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
 ![Tabela In and OUT - VerificacaoChequeEspecial](./imgs/img_VerificacaoChequeEspecial.png)
+
+---
+
+## Controle de Saques
+
+### Descrição
+
+Você está desenvolvendo um programa simples em Java para auxiliar um cliente a realizar saques de uma conta bancária. O cliente pode fazer saques até atingir um limite diário predefinido.
+
+### Entrada
+
+- O programa solicitará ao usuário que informe o limite diário de saque.
+- Em seguida, o programa solicitará ao usuário que informe o valor do primeiro saque.
+
+### Saída
+
+- Utilizando um laço _for_, o programa iterará sobre os saques.
+- Para cada saque, o programa verificará se o valor ultrapassa o limite diário.
+    - Se ultrapassar, o programa informará que o limite foi atingido e encerrará o loop.
+    - Se não ultrapassar, o programa informará que o saque foi realizado com sucesso.
+
+### Exemplos
+
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
+
+![Tabelea In and Out - ControleSimplesDeSaques](./imgs/img_ControleSimplesDeSaques.png)
