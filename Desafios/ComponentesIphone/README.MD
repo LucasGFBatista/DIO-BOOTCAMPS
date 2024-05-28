@@ -109,6 +109,34 @@ Esta classe implementa as classes anteriores, como solicitada no desafio. Ou sej
     - atualizarPagina(): void
     - fecharPagina(): void
 
+#### Contato
+
+- **Atributo**
+  - **private**
+    - nome: String
+    - numero: String
+
+- **Método**
+  - **public**
+    - getNome(): String
+    - setNome(novoNome: String): void
+    - getNumero(): String
+    - setNumero(novoNumero: String): void
+
+#### Musica
+
+- **Atributo**
+  - **private**
+    - nomeMusica: String
+    - nomeBanda: String
+
+- **Método**
+  - **public**
+    - getNomeMusica(): String
+    - setNomeMusica(novoNomeMusica: String): void
+    - getNomeBanda(): String
+    - setNomeBanda(novoNomeBanda: String): void
+
 ## Funcionamento
 
 Os dados são solicitados e inseridos através do terminal, onde o usuário receberá um menu indicando as opções a serem escolhidas e seus repectivos números. Por exemplo:
