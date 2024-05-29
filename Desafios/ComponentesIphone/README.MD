@@ -25,7 +25,7 @@ Aprender e aplicar os fundamentos de Programação Orientada a Objetos (POO) e L
 
 O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramenta de desenho grafico multiplataforma.
 
-![](UML_Desafio_Iphone.drawio)
+![](./imgs/UML_Desafio_Iphone.png)
 
 ## Descrição das Interfaces e Classes
 
@@ -81,7 +81,7 @@ Interface responsavel por implementar as funcionalidades de um navegador de inte
 
 #### Iphone
 
-Esta classe implementa as classes anteriores, como solicitada no desafio. Ou seja, a classe irá constar os atributos (caso tenha) e os métodos das interfaces que são implementadas.
+Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorMusical`,`NavegadorInternet`), como solicitada no desafio. Ou seja, a classe irá constar os atributos (caso tenha) e os métodos das interfaces que são implementadas.
 
 - **Atributo**
   - **private**
