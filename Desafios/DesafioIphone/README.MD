@@ -25,7 +25,18 @@ Aprender e aplicar os fundamentos de Programação Orientada a Objetos (POO) e L
 
 O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramenta de desenho grafico multiplataforma.
 
-![](./imgs/UML_Desafio_Iphone.png)
+### Diagrama de Classes
+
+![Class Diagram](./imgs/UML_Desafio_Iphone-Class.png)
+
+
+### Diagrama de Pacote
+
+![Package Diagram](./imgs/UML_Desafio_Iphone-Package.png)
+
+### Diagrama de Classe e Pacote
+
+![Package with classes diagram](./imgs/UML_Desafio_Iphone-Package+Class.png)
 
 ## Descrição das Interfaces e Classes
 
@@ -36,8 +47,6 @@ O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramen
 Interface responsavel por implementar as funcionalidades de um aparelho telefonico.
 
 - **Métodos**
-  - **protected**
-  
   - **public**
     - redeMovelDisponivel(): boolean
     - ligar() - Utilizei Overload, pois há duas possibilidades de realizar ligação
