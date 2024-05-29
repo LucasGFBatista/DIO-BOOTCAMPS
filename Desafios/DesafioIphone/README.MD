@@ -52,7 +52,6 @@ Interface responsavel por implementar as funcionalidades de um aparelho telefoni
 
 Interface responsavel por implementar as funcionalidades de um reprodutor demúsica.
 
-
 - **Métodos**
   - **public**
     - tocar(): void
@@ -83,9 +82,9 @@ Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorM
 - **Atributo**
   - **private**
     - volume: int
-        - **static**
-        - MAXIMO_VOLUME: int
-        - MINIMO_VOLUME: int
+      - **static**
+      - MAXIMO_VOLUME: int
+      - MINIMO_VOLUME: int
 
 - **Métodos**
   - **private**
