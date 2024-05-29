@@ -1,7 +1,5 @@
 package interfaces;
 
-import java.util.Random;
-
 import model.Contato;
 
 public interface AparelhoTelefonico {
