@@ -37,8 +37,9 @@ Interface responsavel por implementar as funcionalidades de um aparelho telefoni
 
 - **Métodos**
   - **protected**
-    - redeMovelDisponivel(): boolean
+  
   - **public**
+    - redeMovelDisponivel(): boolean
     - ligar() - Utilizei Overload, pois há duas possibilidades de realizar ligação
       - ligar(numero:  String): void
       - ligar(numeroContato: Contato): void
@@ -51,9 +52,6 @@ Interface responsavel por implementar as funcionalidades de um aparelho telefoni
 
 Interface responsavel por implementar as funcionalidades de um reprodutor demúsica.
 
-- **Atributos**
-  - **protected**
-    - volume: int
 
 - **Métodos**
   - **public**
@@ -68,9 +66,8 @@ Interface responsavel por implementar as funcionalidades de um reprodutor demús
 Interface responsavel por implementar as funcionalidades de um navegador de internet.
 
 - **Métodos**
-  - **protected**
-    - conexaoComInternet(): boolean
   - **public**
+    - conexaoComInternet(): boolean
     - exibirPagina(): void
     - adicionarNovaAba(): void
     - fecharAbaNavegador(): void
@@ -86,12 +83,17 @@ Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorM
 - **Atributo**
   - **private**
     - volume: int
+        - **static**
+        - MAXIMO_VOLUME: int
+        - MINIMO_VOLUME: int
 
 - **Métodos**
   - **private**
     - redeMovelDisponivel(): boolean
     - conexaoComInternet(): boolean
   - **public**
+    - redeMovelDisponivel(): boolean
+    - conexaoComInternet(): boolean
     - ligar(numero:  String): void
     - ligar(numeroContato: Contato): void
     - atender(): void
