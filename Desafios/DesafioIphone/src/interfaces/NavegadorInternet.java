@@ -3,7 +3,7 @@ package interfaces;
 public interface NavegadorInternet {
 
 	boolean conexaoComInternet();
-	
+
 	void exibirPagina();
 
 	void adicionarNovaAba();
