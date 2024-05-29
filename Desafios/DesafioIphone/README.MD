@@ -4,6 +4,30 @@
 
 Este repositório, concebido com propósitos didáticos, representa um desafio de modelagem e diagramação, utilizando UML, para um componente iPhone, abrangendo suas funcionalidades como reprodutor musical, aparelho telefônico e navegador na internet, criado em colaboração entre a [Digital Innovation One](https://www.dio.me/) e o Santander, como parte do Bootcamp Santander 2024 - Backend com Java.
 
+## Sumário
+
+- [Objetivo](#objetivo)
+- [Ferramentas e tecnologias](#ferramentas-e-tecnologias)
+- [Como roda o Sistema](#como-rodar-o-sistema)
+- [Diagrama UML](#diagrama-uml)
+  - [Diagrama de Classes](#diagrama-de-classes)
+  - [Diagrama de Pacote](#diagrama-de-pacote)
+  - [Diagrama de Classe e Pacote](#diagrama-de-classe-e-pacote)
+- [Descrição da organização do projeto](#descrição-da-organização-do-projeto)
+  - [Pacotes](#pacotes)
+  - [Interfaces](#interfaces)
+    - [AparelhoTelefonico](#aparelho-telefonico)
+    - [ReprodutorMusical](#reprodutor-musical)
+    - [NavegadorInternet](#navegador-internet)
+  - [Classes](#classes)
+    - [Iphone](#iphone)
+    - [SmartPhone](#smartphone)
+    - [Contato](#contato)
+    - [Musica](#musica)
+    - [Menu](#menu)
+- [Funcionamento](#funcionamento)
+- [Contato](#contato)
+
 ## Objetivo
 
 Aprender e aplicar os fundamentos de Programação Orientada a Objetos (POO) e Linguagem de Modelagem Unificada (UML), os quais incluem:
@@ -21,6 +45,70 @@ Aprender e aplicar os fundamentos de Programação Orientada a Objetos (POO) e L
 ![Java](https://img.shields.io/badge/Java-000?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
 ![VSCode](https://img.shields.io/badge/vscode-000?style=for-the-badge&logo=visualstudiocode&logoColor=blue)
 
+## Como Rodar o Sistema
+
+Para executar o sistema, siga os passos abaixo:
+
+### Pré-requisitos
+
+Antes de começar, certifique-se de que você possui as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
+
+- **Java Development Kit (JDK)**: Versão 11 ou superior.
+- **Git**: Para clonar o repositório.
+- **Visual Studio Code (VSCode)** ou qualquer IDE de sua preferência (como IntelliJ IDEA ou Eclipse).
+
+### Passo a Passo
+
+1. **Clone o Repositório**
+
+   Abra o terminal e clone o repositório para o seu ambiente local usando o comando:
+
+   ```bash
+   git clone https://github.com/LucasGFBatista/DIO-BOOTCAMP-JAVA.git
+   ```
+
+2. **Importe o Projeto na IDE**
+
+   - Se estiver usando o **VSCode**:
+     - Abra o VSCode.
+     - Vá até `File > Open Folder` e selecione a pasta do projeto clonado.
+
+   - Se estiver usando o **IntelliJ IDEA** ou **Eclipse**:
+     - Utilize a opção de importação de projetos existentes e selecione a pasta do projeto clonado.
+
+3. **Compile o Projeto**
+
+   Abra o terminal na pasta do projeto ou utilize o terminal integrado da IDE e execute o seguinte comando para navegar até a pasta do projeto:
+
+      ```bash
+    cd Desafios/DesafioIphone
+
+Execute o comando para compilar o projeto:
+
+      ```
+
+   ```bash
+   javac -d bin /src/**/*.java
+   ```
+
+Caso esteja utilizando o windows
+
+   ```bash
+   javac -d bin \src\**\*.java
+   ```
+
+   Este comando compilará os arquivos `.java` e colocará os arquivos `.class` na pasta `bin`.
+
+4". **Execute o Projeto**
+
+   Ainda no terminal, execute o comando para rodar a classe principal `Iphone`:
+
+   ```bash
+   java -cp bin app.Iphone
+   ```
+
+   Isto iniciará o sistema e você verá o menu interativo no terminal, onde poderá selecionar as opções desejadas.
+
 ## Diagrama UML
 
 O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramenta de desenho grafico multiplataforma.
@@ -28,7 +116,6 @@ O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramen
 ### Diagrama de Classes
 
 ![Class Diagram](./imgs/UML_Desafio_Iphone-Class.png)
-
 
 ### Diagrama de Pacote
 
@@ -41,6 +128,18 @@ O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramen
 ## Descrição da organização do projeto
 
 ### Pacotes
+
+- **app**
+
+    Este pacote consta a classe [`Iphone`](#iphone), onde iniciará o sistema.
+- **interfaces**
+
+    Este pacote está resposavel pelas [interfaces](#interfaces) do projeito, que são:
+  - [`AparelhoTelefonico`](#aparelhotelefonico)
+  - [`NavegadorInternet`](#navegadorinternet)
+  - [`ReprodutorMusical`](#reprodutormusical)
+
+![Package Diagram](./imgs/UML_Desafio_Iphone-Package.png)
 
 ```
 
@@ -68,18 +167,11 @@ O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramen
 
 ```
 
-
-![Package Diagram](./imgs/UML_Desafio_Iphone-Package.png)
-
-
-
-
-
 ### Interfaces
 
 #### AparelhoTelefonico
 
-Interface responsavel por implementar as funcionalidades de um aparelho telefonico.
+Interface [`AparelhoTelefonico`](./src/interfaces/AparelhoTelefonico.java) responsavel por implementar as funcionalidades de um aparelho telefonico.
 
 - **Métodos**
   - **public**
@@ -94,7 +186,7 @@ Interface responsavel por implementar as funcionalidades de um aparelho telefoni
 
 #### ReprodutorMusical
 
-Interface responsavel por implementar as funcionalidades de um reprodutor demúsica.
+Interface [`ReprodutorMusical`](./src/interfaces/ReprodutorMusical.java) é responsavel por implementar as funcionalidades de um reprodutor de música.
 
 - **Métodos**
   - **public**
@@ -106,7 +198,7 @@ Interface responsavel por implementar as funcionalidades de um reprodutor demús
 
 #### NavegadorInternet
 
-Interface responsavel por implementar as funcionalidades de um navegador de internet.
+Interface [`NavegadorInternet`](./src/interfaces/NavegadorInternet.java) é responsavel por implementar as funcionalidades de um navegador de internet.
 
 - **Métodos**
   - **public**
@@ -119,7 +211,25 @@ Interface responsavel por implementar as funcionalidades de um navegador de inte
 
 ### Classes
 
-###
+#### Iphone
+
+A classe [`Iphone`](./src/app/Iphone.java) é responsavel por inicar o sistema.
+
+ ```java
+ public class Iphone {
+
+ public static void main(String[] args) {
+  Menu menu = new Menu();
+  menu.exibirMenu();
+
+ }
+}
+```
+
+- **Méthodo**
+  - **public**
+    - **static**
+      - main: void
 
 #### SmartPhone
 
@@ -137,8 +247,6 @@ Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorM
     - redeMovelDisponivel(): boolean
     - conexaoComInternet(): boolean
   - **public**
-    - redeMovelDisponivel(): boolean
-    - conexaoComInternet(): boolean
     - ligar(numero:  String): void
     - ligar(numeroContato: Contato): void
     - atender(): void
@@ -148,8 +256,8 @@ Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorM
     - tocar(): void
     - pausar(): void
     - selecionarMusica(musica: Musisca): void
-    - aumetarVolume(): void
-    - diminuirVolume(): void
+    - aumetarVolume(volume: int): void
+    - diminuirVolume(volume: int): void
     - exibirPagina(): void
     - adicionarNovaAba(): void
     - fecharAbaNavegador(): void
@@ -184,12 +292,39 @@ Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorM
     - getNomeBanda(): String
     - setNomeBanda(novoNomeBanda: String): void
 
+#### Menu
+
+- **Atributos**
+  - **private**
+    - scanner: Scanner
+    - iphone: SmartPhone
+    - volume: int
+- **Métodos**
+  - **private**
+    - exibirMenuAparelhoTelefonico(): void
+    - exibirMenuReprodutorMusical(): void
+    - exibirMenuNavegadorInternet(): void
+  - **public**
+    - exibirMenu(): void
+
 ## Funcionamento
 
 Os dados são solicitados e inseridos através do terminal, onde o usuário receberá um menu indicando as opções a serem escolhidas e seus repectivos números. Por exemplo:
 
 - Programa:  
 ---- Escolha o aplicativo ----  
+
+```bash
+
+  ####    #####    ##  ##    ####    ##  ##   ######
+   ##     ##  ##   ##  ##   ##  ##   ### ##   ##
+   ##     ##  ##   ##  ##   ##  ##   ######   ##
+   ##     #####    ######   ##  ##   ######   ####
+   ##     ##       ##  ##   ##  ##   ## ###   ##
+   ##     ##       ##  ##   ##  ##   ##  ##   ##
+  ####    ##       ##  ##    ####    ##  ##   ######
+
+---- Escolha o aplicativo ---
 
 1. Reprodutor musical  
 2. Aparelho telefônico  
@@ -198,4 +333,13 @@ Os dados são solicitados e inseridos através do terminal, onde o usuário rece
 
 - Usuário: 1 *(depois ENTER para o próximo passo)*
 
-</br>
+```
+
+## Contato
+
+Se encontrar algum erro ou tiver sugestões de melhorias, sinta-se à vontade para entrar em contato por algum dos meios abaixo ou pelos meiso dispostos no meu perfil do github.
+
+- **Email**: [lucas.gf.batista](mailto:seu-email@exemplo.com)
+- **GitHub**: [SeuGitHub](https://github.com/LucasGFBatista)
+
+Agradeço por qualquer feedback que possa ajudar a melhorar este projeto!
