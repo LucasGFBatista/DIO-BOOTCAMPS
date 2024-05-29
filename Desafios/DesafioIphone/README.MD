@@ -38,7 +38,42 @@ O diagrama UML foi criado utilizando o [drawio](https://draw.io//), uma ferramen
 
 ![Package with classes diagram](./imgs/UML_Desafio_Iphone-Package+Class.png)
 
-## Descrição das Interfaces e Classes
+## Descrição da organização do projeto
+
+### Pacotes
+
+```
+
+\---src
+    |   module-info.java
+    |
+    +---app
+    |       Iphone.java
+    |
+    +---interfaces
+    |       AparelhoTelefonico.java
+    |       NavegadorInternet.java
+    |       ReprodutorMusical.java
+    |
+    +---model
+    |   |   Contato.java
+    |   |   Musica.java
+    |   |
+    |   \---aparelhos
+    |           SmartPhone.java
+    |
+    \---utils
+            Menu.java
+
+
+```
+
+
+![Package Diagram](./imgs/UML_Desafio_Iphone-Package.png)
+
+
+
+
 
 ### Interfaces
 
@@ -84,7 +119,9 @@ Interface responsavel por implementar as funcionalidades de um navegador de inte
 
 ### Classes
 
-#### Iphone
+###
+
+#### SmartPhone
 
 Esta classe implementa as classes anteriores (`AparelhoTelefonico`, `ReprodutorMusical`,`NavegadorInternet`), como solicitada no desafio. Ou seja, a classe irá constar os atributos (caso tenha) e os métodos das interfaces que são implementadas.
 
