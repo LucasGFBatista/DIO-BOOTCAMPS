@@ -85,7 +85,6 @@ Antes de começar, certifique-se de que você possui as seguintes ferramentas in
 
 Execute o comando para compilar o projeto:
 
-      ```
 
    ```bash
    javac -d bin /src/**/*.java
