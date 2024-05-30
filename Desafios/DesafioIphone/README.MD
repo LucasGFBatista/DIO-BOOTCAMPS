@@ -337,9 +337,9 @@ Os dados são solicitados e inseridos através do terminal, onde o usuário rece
 
 ## Contato
 
-Se encontrar algum erro ou tiver sugestões de melhorias, sinta-se à vontade para entrar em contato por algum dos meios abaixo ou pelos meiso dispostos no meu perfil do github.
+Se encontrar algum erro ou tiver sugestões de melhorias, sinta-se à vontade para entrar em contato por algum dos meios abaixo ou pelos meios dispostos no meu perfil do github.
 
-- **Email**: [lucas.gf.batista](mailto:seu-email@exemplo.com)
-- **GitHub**: [SeuGitHub](https://github.com/LucasGFBatista)
+- **Email**: [lucas.gf.batista@gmail.com](mailto:lucas.gf.batista@gmail.com)
+- **GitHub**: [LucasGFBatista](https://github.com/LucasGFBatista)
 
 Agradeço por qualquer feedback que possa ajudar a melhorar este projeto!
