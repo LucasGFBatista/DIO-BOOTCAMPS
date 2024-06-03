@@ -22,3 +22,8 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 1. [SmartTV](PraticandoDuranteAula/sistema-smart-tv/)
 1. [Praticas 01](PraticandoDuranteAula/Praticas-01/)
 1. [Controle de candidatos](PraticandoDuranteAula/controle_candidatos/)
+1. [Collections](PraticandoDuranteAula/Collections/)
+    1. [Genrics](PraticandoDuranteAula/Collections/src/generics/)
+    1. [List](PraticandoDuranteAula/Collections/src/list/)
+    1. [Set](PraticandoDuranteAula/Collections/src/set/)
+    1. [Map](PraticandoDuranteAula/Collections/src/map/)
