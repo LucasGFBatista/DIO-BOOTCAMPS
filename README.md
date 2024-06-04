@@ -28,5 +28,6 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
         1. [Operações basicas](PraticandoDuranteAula/Collections/src/list/OperacoesBasicas/)
         2. [Atividade - Operações Basicas - Carrinho de compras](PraticandoDuranteAula/Collections/src/list/carrinhoCompras/)
         1. [Atividade - Pesquisa - Catalogo Livros](PraticandoDuranteAula/Collections/src/list/Pesquisa/)
+        1. [Atividade - Ordenacao](PraticandoDuranteAula/Collections/src/list/ordenacao/)
     1. [Set](PraticandoDuranteAula/Collections/src/set/)
     2. [Map](PraticandoDuranteAula/Collections/src/map/)
