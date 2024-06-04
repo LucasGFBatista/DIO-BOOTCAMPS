@@ -28,4 +28,9 @@ public class Convidados {
 		this.codigoConvite = codigoConvite;
 	}
 
+	@Override
+	public String toString() {
+		return "Convidados [nome=" + nome + ", codigoConvite=" + codigoConvite + "]";
+	}
+
 }
