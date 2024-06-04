@@ -32,7 +32,7 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
     1. [Set](PraticandoDuranteAula/Collections/src/set/)
         1. [Operações basicas](PraticandoDuranteAula/Collections/src/set/OperacoesBasicas/)
         1. [Atividade -  Pesquisa - Agenda de Contatos](PraticandoDuranteAula/Collections/src/set/Pesquisa/)
-        1. [Atividade - Ordenação](PraticandoDuranteAula/Collections/src/set/Ordenacao/)
+        1. [Atividade - Ordenação - Produtos](PraticandoDuranteAula/Collections/src/set/Ordenacao/)
     1. [Map](PraticandoDuranteAula/Collections/src/map/)
         1. [Operações basicas](PraticandoDuranteAula/Collections/src/map/OperacoesBasicas/)
         1. [Atividade -  Pesquisa - ](PraticandoDuranteAula/Collections/src/map/Pesquisa/)
