@@ -1,13 +1,13 @@
 package set.OperacoesBasicas;
 
-public class Convidados {
+public class Convidado {
 	private String nome;
 	private int codigoConvite;
 
-	public Convidados() {
+	public Convidado() {
 	}
 
-	public Convidados(String nome, int codigoConvite) {
+	public Convidado(String nome, int codigoConvite) {
 		this.nome = nome;
 		this.codigoConvite = codigoConvite;
 	}
@@ -30,7 +30,8 @@ public class Convidados {
 
 	@Override
 	public String toString() {
-		return "Convidados [nome=" + nome + ", codigoConvite=" + codigoConvite + "]";
+		return "Convidado [nome=" + nome + ", codigoConvite=" + codigoConvite + "]";
+
 	}
 
 }
