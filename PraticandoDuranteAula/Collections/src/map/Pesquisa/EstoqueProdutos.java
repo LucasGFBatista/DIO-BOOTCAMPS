@@ -71,11 +71,11 @@ public class EstoqueProdutos {
 		    Produto produtoMaiorQuantidadeValorNoEstoque = null;
 		    double maiorValorTotalProdutoEstoque = 0d;
 		    if (!estoqueProdutoMap.isEmpty()) {
-		      for (Map.Entry<Long, Produto> entry : estoqueProdutoMap.entrySet()) {
-		        double valorProdutoEmEstoque = entry.getValue().getPreco() * entry.getValue().getQuantidade();
+		      for (Map.Entry<Long, Produto> produto : estoqueProdutoMap.entrySet()) {
+		        double valorProdutoEmEstoque = produto.getValue().getPreco() * produto.getValue().getQuantidade();
 		        if (valorProdutoEmEstoque > maiorValorTotalProdutoEstoque) {
 		          maiorValorTotalProdutoEstoque = valorProdutoEmEstoque;
-		          produtoMaiorQuantidadeValorNoEstoque = entry.getValue();
+		          produtoMaiorQuantidadeValorNoEstoque = produto.getValue();
 		        }
 		      }
 		    }
