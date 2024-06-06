@@ -1,20 +1,21 @@
 package model;
 
-
 public abstract class Conta implements IConta {
-	
+
 	private static final int AGENCIA_PADRAO = 1;
 	private static int SEQUENCIAL = 1;
 
 	protected int agencia;
 	protected int numero;
 	protected double saldo;
+	protected TipoConta tipoConta;
 	protected Cliente cliente;
 
 	public Conta(Cliente cliente) {
 		this.agencia = Conta.AGENCIA_PADRAO;
 		this.numero = SEQUENCIAL++;
 		this.cliente = cliente;
+
 	}
 
 	@Override
@@ -43,6 +44,10 @@ public abstract class Conta implements IConta {
 
 	public double getSaldo() {
 		return saldo;
+	}
+
+	public TipoConta getTipoConta() {
+		return tipoConta;
 	}
 
 	protected void imprimirInfosComuns() {
