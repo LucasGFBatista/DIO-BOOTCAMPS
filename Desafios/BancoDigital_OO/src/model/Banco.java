@@ -56,7 +56,7 @@ public class Banco {
 
 	}
 
-	//Exibir contas ordenadas por tipo de conta
+	// Exibir contas ordenadas por tipo de conta
 	public void exibirTodasContasOrdenadas() {
 		// Crie um mapa para armazenar as contas agrupadas por tipo de conta
 		Map<TipoConta, List<Conta>> contasAgrupadas = new HashMap<>();
@@ -90,8 +90,8 @@ public class Banco {
 			System.out.println("---------------------------------");
 		}
 	}
-	
-	//Exbir contas corrente
+
+	// Exbir contas corrente
 	public void exibirContasCorrentesOrdenadas() {
 		List<Conta> contasCorrentes = new ArrayList<>();
 		for (Conta conta : contas) {
@@ -115,6 +115,32 @@ public class Banco {
 			imprimirConta(conta);
 		}
 		System.out.println("----------------------------------------");
+	}
+
+	// Exbir contas corrente
+	public void exibirContasPoupancaOrdenadas() {
+		List<Conta> contasPoupanca = new ArrayList<>();
+		for (Conta conta : contas) {
+			if (conta instanceof ContaPoupanca) {
+				contasPoupanca.add(conta);
+			}
+		}
+
+		// Ordene as contas poupança por número de conta
+		contasPoupanca.sort((c1, c2) -> {
+			int comparacaoAgencia = Integer.compare(c1.getAgencia(), c2.getAgencia());
+			if (comparacaoAgencia != 0) {
+				return comparacaoAgencia;
+			}
+			return Integer.compare(c1.getNumero(), c2.getNumero());
+		});
+
+		// Imprima as contas poupança ordenadas
+		System.out.println("=== Contas Poupança Ordenadas por Número ===");
+		for (Conta conta : contasPoupanca) {
+			imprimirConta(conta);
+		}
+		System.out.println("-------------------------------------------");
 	}
 
 }
