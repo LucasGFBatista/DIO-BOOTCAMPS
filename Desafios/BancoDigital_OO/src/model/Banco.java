@@ -1,8 +1,9 @@
 package model;
 
 import java.util.ArrayList;
-
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import service.ContaCorrente;
 import service.ContaPoupanca;
@@ -49,10 +50,71 @@ public class Banco {
 	private void imprimirConta(Conta conta) {
 		System.out.println("---------------------------------");
 		System.out.println("Titular: " + conta.cliente.getNome());
-		System.out.println("Tipo Conta: " + conta.getTipoConta());
+		System.out.println("Tipo Conta: " + conta.getTipoConta().getNomeTipo());
 		System.out.println("Agência: " + conta.getAgencia());
 		System.out.println("Número: " + conta.getNumero());
 
+	}
+
+	//Exibir contas ordenadas por tipo de conta
+	public void exibirTodasContasOrdenadas() {
+		// Crie um mapa para armazenar as contas agrupadas por tipo de conta
+		Map<TipoConta, List<Conta>> contasAgrupadas = new HashMap<>();
+
+		// Agrupe as contas por tipo
+		for (Conta conta : contas) {
+			TipoConta tipoConta = conta.getTipoConta();
+			List<Conta> listaContasTipo = contasAgrupadas.getOrDefault(tipoConta, new ArrayList<>());
+			listaContasTipo.add(conta);
+			contasAgrupadas.put(tipoConta, listaContasTipo);
+		}
+
+		// Ordene as listas de contas por número de conta
+		for (Map.Entry<TipoConta, List<Conta>> entry : contasAgrupadas.entrySet()) {
+			entry.getValue().sort((c1, c2) -> {
+				int comparacaoAgencia = Integer.compare(c1.getAgencia(), c2.getAgencia());
+				if (comparacaoAgencia != 0) {
+					return comparacaoAgencia;
+				}
+				return Integer.compare(c1.getNumero(), c2.getNumero());
+			});
+		}
+
+		// Imprima as contas agrupadas e ordenadas
+		System.out.println("\n=== Contas Ordenadas por Tipo e Número ===");
+		for (Map.Entry<TipoConta, List<Conta>> entry : contasAgrupadas.entrySet()) {
+			System.out.println("\n\nTipo Conta: " + entry.getKey());
+			for (Conta conta : entry.getValue()) {
+				imprimirConta(conta);
+			}
+			System.out.println("---------------------------------");
+		}
+	}
+	
+	//Exbir contas corrente
+	public void exibirContasCorrentesOrdenadas() {
+		List<Conta> contasCorrentes = new ArrayList<>();
+		for (Conta conta : contas) {
+			if (conta instanceof ContaCorrente) {
+				contasCorrentes.add(conta);
+			}
+		}
+
+		// Ordene as contas correntes por número de conta
+		contasCorrentes.sort((c1, c2) -> {
+			int comparacaoAgencia = Integer.compare(c1.getAgencia(), c2.getAgencia());
+			if (comparacaoAgencia != 0) {
+				return comparacaoAgencia;
+			}
+			return Integer.compare(c1.getNumero(), c2.getNumero());
+		});
+
+		// Imprima as contas correntes ordenadas
+		System.out.println("=== Contas Correntes Ordenadas por Número ===");
+		for (Conta conta : contasCorrentes) {
+			imprimirConta(conta);
+		}
+		System.out.println("----------------------------------------");
 	}
 
 }
