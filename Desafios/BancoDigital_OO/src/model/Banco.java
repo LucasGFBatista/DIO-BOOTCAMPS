@@ -40,9 +40,19 @@ public class Banco {
 		contas.add(new ContaCorrente(cliente));
 	}
 
-	//Conta poupança
+	// Conta poupança
 	public void criarContaPoupanca(Cliente cliente) {
 		contas.add(new ContaPoupanca(cliente));
+	}
+
+	// Exibir dados das contas
+	private void imprimirConta(Conta conta) {
+		System.out.println("---------------------------------");
+		System.out.println("Titular: " + conta.cliente.getNome());
+		System.out.println("Tipo Conta: " + conta.getTipoConta());
+		System.out.println("Agência: " + conta.getAgencia());
+		System.out.println("Número: " + conta.getNumero());
+
 	}
 
 }
