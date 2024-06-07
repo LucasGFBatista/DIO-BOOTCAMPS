@@ -1,10 +1,12 @@
 package model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 import model.exception.TransacaoValorInvalidoException;
+import util.Util;
 
 public abstract class Conta implements IConta {
 
@@ -68,11 +70,14 @@ public abstract class Conta implements IConta {
 	}
 
 	@Override
-	public void transferir(double valor, IConta contaDestino) throws TransacaoValorInvalidoException {
+	public void transferir(double valor, Conta contaDestino) throws TransacaoValorInvalidoException {
+		String tabulacao = "\n\t\t\s\s\s";
+
 		if (valor > 0 && saldo >= valor) {
 			this.sacar(valor);
 			contaDestino.depositar(valor);
-			registrarTransacao("TRANSFERENCIA - R$", valor);
+			registrarTransacao(("TRANSFERENCIA - " + tabulacao + "AG: " + contaDestino.getAgencia() + " C:"
+					+ contaDestino.getNumero() + tabulacao + contaDestino.cliente.getNome() + " - R$"), valor);
 		} else {
 			if (valor <= 0) {
 				throw new TransacaoValorInvalidoException(
@@ -93,19 +98,26 @@ public abstract class Conta implements IConta {
 	}
 
 	private void registrarTransacao(String tipoTransacao, double valor) {
+
 		LocalDateTime dataHora = LocalDateTime.now();
-		extrato.add(dataHora + " - " + tipoTransacao + valor);
+
+		extrato.add(String.format("%s - %s %.2f", Util.formatDateTimeYMDHm(dataHora), tipoTransacao, valor));
 	}
 
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato ===");
-		System.out.println(String.format("Titular: %s", this.getTipoConta().getNomeTipo()));
+		LocalDate dataExtrato = LocalDate.now();
+		
+		System.out.println("=== Extrato - " + Util.formatDateYMD(dataExtrato)  +  " ===");
+		System.out.println(String.format("Titular: %s", this.cliente.getNome()));
+		System.out.println(String.format("Tipo Conta: %s", this.getTipoConta().getNomeTipo()));
+		System.out.println(String.format("Agência: %s, Conta: %s %s", this.getAgencia(), this.getNumero(), "\n"));
+
 
 		for (String transacao : extrato) {
 			System.out.println(transacao);
 		}
 
-		System.out.println("\n\nSaldo atual: " + saldo);
+		System.out.println(String.format("\nSaldo atual: R$ %.2f", saldo));
 	}
 
 	public void testeExtrato() {
