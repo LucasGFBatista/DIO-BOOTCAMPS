@@ -16,7 +16,10 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 1. [Modelagem e Diagramação de um Componente iPhone](Desafios/DesafioIphone/) - 2024-05-28 -- 2024-05-29
 1. [Banco Digital OO](Desafios/BancoDigital_OO/) 2024-06-06 -- 2024-06-07
 1. [Desafio POO Dio](Desafios/desafio-poo-dio/) 2024-06-07
-1. 
+1. [Desafio POO na Pratica](Desafios/poo-java-prativa/)
+    - [Readme Desafios](Desafios/poo-java-prativa/README.md)
+    1. []()
+    1. []()
 
 
 
