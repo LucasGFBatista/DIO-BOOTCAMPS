@@ -75,8 +75,8 @@ Utilizando como base o [repositório](https://github.com/falvojr/lab-banco-digit
 
 ### Classe
 
-![Diagrama de Classe](./assets/diagrama-classe.png)
+![Diagrama de Classe](./assets/Dio-Banco-Digital-DiagramaClasse.png)
 
 ### Pacote
 
-![Diagrama de Classe](./assets/diagrama-pacote.png)
+![Diagrama de Classe](./assets/Dio-Banco-Digital-DiagramaPacote.png)
