@@ -1,6 +1,6 @@
 # DIO-BOOTCAMP-JAVA
-Repositório para salvar as atividades e aprendizados do Bootcamp de Java ministrado pela DIO e oferecido pelo Santander
 
+Repositório para salvar as atividades e aprendizados do Bootcamp de Java ministrado pela DIO e oferecido pelo Santander
 
 ## Desafios
 
@@ -9,7 +9,7 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 3. [Condições, Loops e Exceções](Desafios/CondicoesLoopsExcecoes/)
     - [Readme Desafios](Desafios/CondicoesLoopsExcecoes/README.md)
     1. [Operações Bancárias Simples com Swithc - SimulcaoBancaria](Desafios/CondicoesLoopsExcecoes/src/simulacaoBancaria/) - 2024-05-20
-    1.  [Verificaão de Número de Conta Bancária - VerificadorNumeroConta](Desafios/CondicoesLoopsExcecoes/src/verificadorNumeroConta/) - 2024-05-21
+    1. [Verificaão de Número de Conta Bancária - VerificadorNumeroConta](Desafios/CondicoesLoopsExcecoes/src/verificadorNumeroConta/) - 2024-05-21
     1. [Verificador de Idade para Conta Bancaria](Desafios/CondicoesLoopsExcecoes/src/verificadorElegibilidadeConta/) - 2024-05-21
     1. [Verificação de Cheque Especial](Desafios/CondicoesLoopsExcecoes/src/verificacaoChequeEspecial/) - 2024-05-21
     1. [Controle de Saques](Desafios/CondicoesLoopsExcecoes/src/controleSimplesDeSaques/) - 2024-05-21
@@ -18,11 +18,11 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 1. [Desafio POO Dio](Desafios/desafio-poo-dio/) 2024-06-07
 1. [Desafio POO na Pratica](Desafios/poo-java-prativa/)
     - [Readme Desafios](Desafios/poo-java-prativa/README.md)
-    1. []()
-    1. []()
-
-
-
+    1. [Registro de Transações Bancárias](Desafios/poo-java-prativa/src/registroTransacao/)
+    1. [Registro de Transações Bancárias com Stream API](Desafios/poo-java-prativa/src/registroTransacaoStreamAPI/)
+    1. [Conta Bancária com Construtor em POO](Desafios/poo-java-prativa/src/contaBncaria/)
+    1. [Herança Bancária: Entendendo a Herança e Polimorfismo](Desafios/poo-java-prativa/src/herancaBancaria/)
+    1. [Cofres Seguros: Dominando o Encapsulamento e Abstração](Desafios/poo-java-prativa/src/cofreSeguro/)
 
 ## Praticando durante a aula
 
@@ -42,5 +42,5 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
         1. [Atividade - Ordenação - Produtos](PraticandoDuranteAula/Collections/src/set/Ordenacao/)
     1. [Map](PraticandoDuranteAula/Collections/src/map/)
         1. [Operações basicas](PraticandoDuranteAula/Collections/src/map/OperacoesBasicas/)
-        1. [Atividade -  Pesquisa - ](PraticandoDuranteAula/Collections/src/map/Pesquisa/)
+        1. [Atividade -  Pesquisa -](PraticandoDuranteAula/Collections/src/map/Pesquisa/)
         1. [Atividade - Ordenação](PraticandoDuranteAula/Collections/src/map/Ordenacao/)
