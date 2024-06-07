@@ -10,10 +10,4 @@ public class ContaPoupanca extends Conta {
 		this.tipoConta = tipoConta.POUPANCA;
 	}
 
-	@Override
-	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupanca ===");
-		System.out.println(String.format("Titular: %s", super.getTipoConta().getNomeTipo()));
-		super.imprimirInfosComuns();
-	}
 }
