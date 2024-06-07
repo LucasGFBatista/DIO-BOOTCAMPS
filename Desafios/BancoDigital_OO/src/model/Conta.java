@@ -96,9 +96,13 @@ public abstract class Conta implements IConta {
 		LocalDateTime dataHora = LocalDateTime.now();
 		extrato.add(dataHora + " - " + tipoTransacao + valor);
 	}
-	
+
 	public void imprimirExtrato() {
-		
+		System.out.println("=== Extrato ===");
+		for (String transacao : extrato) {
+			System.out.println(transacao);
+		}
+		System.out.println("\n\nSaldo atual: " + saldo);
 	}
 
 }
