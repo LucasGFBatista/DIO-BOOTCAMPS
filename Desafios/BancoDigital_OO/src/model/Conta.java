@@ -99,10 +99,17 @@ public abstract class Conta implements IConta {
 
 	public void imprimirExtrato() {
 		System.out.println("=== Extrato ===");
+		System.out.println(String.format("Titular: %s", this.getTipoConta().getNomeTipo()));
+
 		for (String transacao : extrato) {
 			System.out.println(transacao);
 		}
+
 		System.out.println("\n\nSaldo atual: " + saldo);
+	}
+
+	public void testeExtrato() {
+
 	}
 
 }

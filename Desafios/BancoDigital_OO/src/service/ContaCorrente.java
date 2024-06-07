@@ -10,11 +10,11 @@ public class ContaCorrente extends Conta {
 		this.tipoConta = tipoConta.CORRENTE;
 	}
 
-	@Override
-	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Corrente ===");
-		System.out.println(String.format("Titular: %s", super.getTipoConta().getNomeTipo()));
-		super.imprimirInfosComuns();
-	}
+//	@Override
+//	public void imprimirExtrato() {
+//		System.out.println("=== Extrato Conta Corrente ===");
+//		System.out.println(String.format("Titular: %s", super.getTipoConta().getNomeTipo()));
+//		super.imprimirInfosComuns();
+//	}
 
 }
