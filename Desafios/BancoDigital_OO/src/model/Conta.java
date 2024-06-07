@@ -105,13 +105,12 @@ public abstract class Conta implements IConta {
 	}
 
 	public void imprimirExtrato() {
-git		LocalDate dataExtrato = LocalDate.now();
-		
-		System.out.println("=== Extrato - " + Util.formatDateYMD(dataExtrato)  +  " ===");
+		LocalDate dataExtrato = LocalDate.now();
+
+		System.out.println("=== Extrato - " + Util.formatDateYMD(dataExtrato) + " ===");
 		System.out.println(String.format("Titular: %s", this.cliente.getNome()));
 		System.out.println(String.format("Tipo Conta: %s", this.getTipoConta().getNomeTipo()));
 		System.out.println(String.format("Agência: %s, Conta: %s %s", this.getAgencia(), this.getNumero(), "\n"));
-
 
 		for (String transacao : extrato) {
 			System.out.println(transacao);
@@ -119,6 +118,5 @@ git		LocalDate dataExtrato = LocalDate.now();
 
 		System.out.println(String.format("\nSaldo atual: R$ %.2f", saldo));
 	}
-
 
 }
