@@ -1,0 +1,38 @@
+package desafio_poo_dio.br.com.dio.desafio.dominio;
+
+import java.time.LocalDate;
+
+public class Mentoria extends Conteudo {
+
+	private LocalDate data;
+
+	@Override
+	public double calcularXp() {
+		return XP_PADRAO + 20d;
+	}
+
+	public Mentoria() {
+	}
+
+	public Mentoria(LocalDate data, String nomeMentoria, String descricaoMentoria) {
+		this.data = data;
+		setTitulo(nomeMentoria);
+		setDescricao(descricaoMentoria);
+	}
+
+	public LocalDate getData() {
+		return data;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "Mentoria " 
+				+ "\nTitulo: " + getTitulo() 
+				+ "\nDescricao: " + getDescricao()
+				+ "\nData: " + data + "\n";
+	}
+}
