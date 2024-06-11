@@ -18,11 +18,11 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
 1. [Desafio POO Dio](Desafios/desafio-poo-dio/) 2024-06-07
 1. [Desafio POO na Pratica](Desafios/poo-java-prativa/)
     - [Readme Desafios](Desafios/poo-java-prativa/README.md)
-    1. [Registro de Transações Bancárias](Desafios/poo-java-prativa/src/registroTransacao/)
-    1. [Registro de Transações Bancárias com Stream API](Desafios/poo-java-prativa/src/registroTransacaoStreamAPI/)
-    1. [Conta Bancária com Construtor em POO](Desafios/poo-java-prativa/src/contaBncaria/)
-    1. [Herança Bancária: Entendendo a Herança e Polimorfismo](Desafios/poo-java-prativa/src/herancaBancaria/)
-    1. [Cofres Seguros: Dominando o Encapsulamento e Abstração](Desafios/poo-java-prativa/src/cofreSeguro/)
+    1. [Registro de Transações Bancárias](Desafios/poo-java-prativa/src/registroTransacao/) - 2024-06-10
+    1. [Registro de Transações Bancárias com Stream API](Desafios/poo-java-prativa/src/registroTransacaoStreamAPI/) - 2024-06-11
+    1. [Conta Bancária com Construtor em POO](Desafios/poo-java-prativa/src/contaBncaria/)  - 2024-06-11
+    1. [Herança Bancária: Entendendo a Herança e Polimorfismo](Desafios/poo-java-prativa/src/herancaBancaria/) - 2024-06-11
+    1. [Cofres Seguros: Dominando o Encapsulamento e Abstração](Desafios/poo-java-prativa/src/cofreSeguro/) - 2024-06-11
 
 ## Praticando durante a aula
 
