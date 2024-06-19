@@ -44,3 +44,7 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
         1. [Operações basicas](PraticandoDuranteAula/Collections/src/map/OperacoesBasicas/)
         1. [Atividade -  Pesquisa -](PraticandoDuranteAula/Collections/src/map/Pesquisa/)
         1. [Atividade - Ordenação](PraticandoDuranteAula/Collections/src/map/Ordenacao/)
+
+## Certificados
+
+Separei [uma pasta](/DIO-CERTIFICADOS/) com todos certificados de conclusão dos modulos do bootcamp.
