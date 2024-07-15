@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\00-DEV\DIO-BOOTCAMP-JAVA\PraticandoDuranteAula\Spring-boot\Aula-spring-data-jpa"/>
 			<item value="D:\00-DEV\DIO-BOOTCAMP-JAVA\PraticandoDuranteAula\Spring-boot\primeiros-passos"/>
 		</list>
 	</section>
