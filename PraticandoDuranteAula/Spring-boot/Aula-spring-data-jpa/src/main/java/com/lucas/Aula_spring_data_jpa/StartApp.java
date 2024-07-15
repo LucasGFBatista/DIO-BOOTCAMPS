@@ -21,7 +21,7 @@ public class StartApp implements CommandLineRunner {
 
         userRepository.save(user);
 
-        for(User u : userRepository.findAll()){
+        for (User u : userRepository.findAll()) {
             System.out.println(u);
         }
 
