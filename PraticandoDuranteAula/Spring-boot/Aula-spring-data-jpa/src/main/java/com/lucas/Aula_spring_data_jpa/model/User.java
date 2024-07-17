@@ -3,6 +3,7 @@ package com.lucas.Aula_spring_data_jpa.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tb_user")
 public class User {
 
     @Id
