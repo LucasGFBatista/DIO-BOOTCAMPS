@@ -45,6 +45,12 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
         1. [Atividade -  Pesquisa -](PraticandoDuranteAula/Collections/src/map/Pesquisa/)
         1. [Atividade - Ordenação](PraticandoDuranteAula/Collections/src/map/Ordenacao/)
     1. [Teste com Mockito](PraticandoDuranteAula/TestesComMockito/)
+    1. [Spring Boot](PraticandoDuranteAula/Spring-boot/)
+        1. [Primeiros passos](PraticandoDuranteAula/Spring-boot/primeiros-passos/)
+        1. [First API](PraticandoDuranteAula/Spring-boot/my-first-api/)
+        1. [Spring Data JPA](PraticandoDuranteAula/Spring-boot/Aula-spring-data-jpa/)
+        1. [Spring Security](PraticandoDuranteAula/Spring-boot/spring-security/)
+        1. [Spring Security com JWT](PraticandoDuranteAula/Spring-boot/spring-security-jwt/)
 
 ## Certificados
 
