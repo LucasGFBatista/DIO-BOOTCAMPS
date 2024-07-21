@@ -51,6 +51,10 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
         1. [Spring Data JPA](PraticandoDuranteAula/Spring-boot/Aula-spring-data-jpa/)
         1. [Spring Security](PraticandoDuranteAula/Spring-boot/spring-security/)
         1. [Spring Security com JWT](PraticandoDuranteAula/Spring-boot/spring-security-jwt/)
+    1. [Padrões de Projeto](PraticandoDuranteAula/design-pattern/)
+        1. [Singleton](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/singleton/)
+        1. [Strategy](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/strategy/)
+        1. [Facade](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/facade/)
 
 ## Certificados
 
