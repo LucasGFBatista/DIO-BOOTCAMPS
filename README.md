@@ -53,11 +53,11 @@ Repositório para salvar as atividades e aprendizados do Bootcamp de Java minist
         1. [Spring Security com JWT](PraticandoDuranteAula/Spring-boot/spring-security-jwt/)
     1. [Padrões de Projeto](PraticandoDuranteAula/design-pattern/)
         1. [Singleton](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/singleton/)
-            1. [Singleton Lazy](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/singleton/SingletonLazy.java)
-            1. [Singleton Eager](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/singleton/SingletonEager.java)
-            1. [Singleton LazyHolder](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/singleton/SingletonLazyHolder.java)
-        1. [Strategy](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/strategy/)
-        1. [Facade](PraticandoDuranteAula/design-pattern/src/com/lucasgfbatista/gof/facade/)
+            1. [Singleton Lazy](PraticandoDuranteAula/design-pattern/java-puro/src/com/lucasgfbatista/gof/singleton/SingletonLazy.java)
+            1. [Singleton Eager](PraticandoDuranteAula/design-pattern/java-puro/src/com/lucasgfbatista/gof/singleton/SingletonEager.java)
+            1. [Singleton LazyHolder](PraticandoDuranteAula/design-pattern/java-puro/src/com/lucasgfbatista/gof/singleton/SingletonLazyHolder.java)
+        1. [Strategy](PraticandoDuranteAula/design-pattern/java-puro/src/com/lucasgfbatista/gof/strategy/)
+        1. [Facade](PraticandoDuranteAula/design-pattern/java-puro/src/com/lucasgfbatista/gof/facade/)
 
 ## Certificados
 
