@@ -1,13 +1,22 @@
 package com.lucasgfbatista.domain.model;
 
+import jakarta.persistence.*;
+
 import java.math.BigDecimal;
 
+@Entity(name = "tb_account")
 public class Account {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true, nullable = false)
     private String number;
+    @Column(nullable = false)
     private String agency;
+    @Column(scale = 2, precision = 13)
     private BigDecimal balance;
+    @Column(name = "additional_limmit", scale = 2, precision = 13)
     private BigDecimal limit;
 
 
