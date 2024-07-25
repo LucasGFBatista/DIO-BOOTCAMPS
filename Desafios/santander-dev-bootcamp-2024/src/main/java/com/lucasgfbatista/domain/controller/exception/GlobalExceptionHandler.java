@@ -33,5 +33,5 @@ public class GlobalExceptionHandler {
         logger.error("", unexpectedException);
         return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
     }
-    
+
 }
